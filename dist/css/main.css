@@ -246,6 +246,18 @@ p {
   height: 200px;
   border-radius: 5px;
   margin-right: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.content-discover-item__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+@media screen and (max-width: 767.98px) {
+  .content-discover-item__column {
+    display: none;
+  }
 }
 .content-discover-item__title {
   font-weight: 600;
