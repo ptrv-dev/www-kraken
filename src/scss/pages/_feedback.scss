@@ -1,0 +1,137 @@
+.feedback {
+  // .feedback__slider
+
+  &__slider {
+  }
+}
+.slider-feedback {
+  position: relative;
+
+  // .slider-feedback__button
+
+  &__button {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: none;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5440d9;
+    svg {
+      stroke: $white;
+    }
+    &_left {
+      left: -24px;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    &_right {
+      right: -24px;
+    }
+    &_disable {
+      background: #e6f6ff;
+      svg {
+        stroke: #5440d9;
+      }
+    }
+  }
+
+  // .slider-feedback__content
+
+  &__content {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  // .slider-feedback__slide
+
+  &__slide {
+  }
+}
+.feedback-slide {
+  margin-right: 24px;
+  padding: 50px 40px 40px 40px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/feedback/quote.png');
+  background-repeat: no-repeat;
+  background-position: 40px 40px;
+  flex: 0 0 calc(50% - 12px);
+  transition: transform 0.8s ease-in-out;
+  &:last-child {
+    margin-right: 0;
+  }
+  // .feedback-slide__rating
+
+  &__rating {
+    align-self: flex-end;
+    margin-bottom: 31px;
+    span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url('../img/feedback/start-icon.svg');
+      opacity: 0.5;
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  // .feedback-slide__text
+
+  &__text {
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  // .feedback-slide__user
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  // .feedback-slide__user-img
+
+  &__user-img {
+    max-width: 42px;
+    max-height: 42px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+  // .feedback-slide__user-col
+
+  &__user-col {
+  }
+
+  // .feedback-slide__user-title
+
+  &__user-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $dark-gray;
+  }
+
+  // .feedback-slide__user-subtitle
+
+  &__user-subtitle {
+    line-height: 24px;
+  }
+}

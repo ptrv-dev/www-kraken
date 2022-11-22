@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: $white;
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: $gray;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1320px + 30px;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: $white;
+  padding: 13px 33px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #5541da;
+
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: inset 0px -5px 0px 0px #5541da;
+  }
+
+  // .button_o
+
+  &_o {
+    border: 1px solid #5541da;
+    background-color: transparent;
+    color: #5541da;
+
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+      background: #5541da;
+      color: $white;
+      box-shadow: none;
+    }
+  }
+  &_white {
+    color: #5541da;
+    background-color: $white;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.section {
+  margin-top: 130px;
+  &__title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 60px;
+    color: $dark;
+    margin-bottom: 10px;
+    &_white {
+      color: $white;
+    }
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 30px;
+    &_white {
+      color: $white;
+    }
+  }
+  &__header {
+    max-width: 660px;
+    margin-bottom: 50px;
+    &_center {
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+  }
+}
